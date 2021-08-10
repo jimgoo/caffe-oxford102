@@ -71,7 +71,7 @@ AlexNet uses a crop size of 227 x 227, while VGG_S uses 224 x 224, so it's not a
 
 ## Notes
 
-- A more detailed blog post on this can be found at [http://jimgoo.com/flower-power/](http://jimgoo.com/flower-power/).
+- A more detailed blog post on this can be found at [http://jimgoo.github.io/flower-power/](http://jimgoo.github.io/flower-power/).
 
 - The class labels for each species were deduced by Github user [m-co](https://github.com/m-co) and can be found in the file `class-labels.py`. They are in order from class 1 to class 102 as used in the mat files.
 
