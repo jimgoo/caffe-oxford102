@@ -7,11 +7,11 @@ To download the Oxford 102 dataset, prepare Caffe image files, and download pre-
 ```bash
 python bootstrap.py
 ```
-This will give you some pretty flower pictures:
+This will download files for the images, class labels, and train/val/test splits from the Oxford CV group's site. Some files are in MATLAB's `.mat` format so we use scipy to read those. A sample of the pretty flower images:
 
 ![alt tag](plots/flowers.png)
 
-The categories are split into training, testing, and validation sets. It seems odd that there are more testing images than training images and that the training and validation sets are stratified but the test set isn't.
+A plot of the class distributions for each split follows. It seems odd that there are more testing images than training images and that the training and validation sets are stratified but the test set isn't.
 
 ![alt tag](plots/splits.png)
 
