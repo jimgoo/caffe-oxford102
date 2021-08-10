@@ -1,6 +1,6 @@
 # caffe-oxford102
 
-This bootstraps the training of deep convolutional neural networks with [Caffe](http://caffe.berkeleyvision.org/) to classify images in the [Oxford 102 category flower dataset](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html). A more detailed explanation can be found [here](http://jimgoo.com/flower-power/). The prototxt files for fine-tuning AlexNet and VGG_S models are included and use initial weights from training on the [ILSVRC 2012 (ImageNet) data](http://www.image-net.org/challenges/LSVRC/2012/). 
+This bootstraps the training of deep convolutional neural networks with [Caffe](http://caffe.berkeleyvision.org/) to classify images in the [Oxford 102 category flower dataset](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html). The prototxt files for fine-tuning AlexNet and VGG_S models are included and use initial weights from training on the [ILSVRC 2012 (ImageNet) data](http://www.image-net.org/challenges/LSVRC/2012/). 
 
 To download the Oxford 102 dataset, prepare Caffe image files, and download pre-trained model weights for AlexNet and VGG_S, run
 
@@ -11,7 +11,7 @@ This will give you some pretty flower pictures:
 
 ![alt tag](plots/flowers.png)
 
-The categories are split into training, testing, and validation sets. It seems odd that there are more testing images than training images.
+The categories are split into training, testing, and validation sets. It seems odd that there are more testing images than training images and that the training and validation sets are stratified but the test set isn't.
 
 ![alt tag](plots/splits.png)
 
@@ -70,6 +70,8 @@ These weights can be downloaded at https://s3.amazonaws.com/jgoode/oxford102_VGG
 AlexNet uses a crop size of 227 x 227, while VGG_S uses 224 x 224, so it's not an exact comparison.
 
 ## Notes
+
+- A more detailed blog post on this can be found at [http://jimgoo.com/flower-power/](http://jimgoo.com/flower-power/).
 
 - The class labels for each species were deduced by Github user [m-co](https://github.com/m-co) and can be found in the file `class-labels.py`. They are in order from class 1 to class 102 as used in the mat files.
 
